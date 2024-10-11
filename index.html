@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="app.js" defer></script>
+  <title>Tetris Game</title>
+</head>
+<body>
+  <div id="myGameOver" class="gameOver">
+    <h3>Game Over!</h3>
+    <button id="playAgain">Play again</button>
+  </div>
+  <div class="tetris">
+    <h1>TETRIS</h1>
+    <div class="tetrisField">
+      <div class="infoContainer">
+        <div class="info">
+          <button id="startBtn">START/PAUSE</button><br><br>
+          <p>Controls:<br>
+            ↑<br>
+            ← ↓ →</p><br>
+            <p>Left and Right: <br>
+            move side to side</p><br>
+            <p>Up: <br>
+              rotate
+            </p><br>
+            <p>Down: <br>
+            fall faster</p>
+        </div>
+      </div>
+      <div id="tetris-container"></div>
+      <div class="resultContainer">
+        <p class="resultStyle">Score<br>
+        <span id="score">0</span></p><br>
+        <p class="resultStyle">Level<br>
+        <span id="level">1</span></p><br>
+        <p class="resultStyle">Lines<br>
+        <span id="lines">0</span></p><br>
+        <p id="nextShape"></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
